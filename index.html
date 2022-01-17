@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h3 class="player-one">
+        Player 1 - Won : <span id="player-one-score">00</span>
+      </h3>
+      <br />
+      <h3 class="player-two">
+        Player 2 - Won : <span id="player-two-score">00</span>
+      </h3>
+    </header>
+    <main class="main">
+      <div class="player-one-btn">
+        <button id="fire-player-two">Player 1 fire</button>
+      </div>
+      <div class="player-two-btn">
+        <button id="fire-player-one">Player 2 fire</button>
+      </div>
+    </main>
+
+    <section class="health-teller">
+        <h4>Score Card</h4>
+      <div class="player-one">
+        Player 1 life: <span id="health-player-one">100</span>
+      </div>
+      <br />
+      <div class="player-two">
+        Player 2 life : <span id="health-player-two">100</span>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
