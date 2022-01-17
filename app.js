@@ -6,13 +6,19 @@ const healthPlayerTwo = document.querySelector("#health-player-two")
 // 
 const playerOneScore = document.querySelector("#player-one-score")
 const playerTwoScore = document.querySelector("#player-two-score")
+//
+const round = document.querySelector("#round")
 
+// -- global var 
 var playerOneLife = 100;
 var playerTwoLife = 100;
 
 var playerOneS = 00;
 var playerTwoS = 00;
 
+var currentRound = 0
+
+// --  function  define 
 const getRandomInt = (max) => Math.ceil(Math.random() * max)
 const reload = () => location.reload();
 
@@ -34,13 +40,12 @@ function scoreBoard() {
 
 function championDecide() {
     if (playerOneS == 3) {
-        alert("player one win ")
+        alert(`player one win , MESSAGE FOR PLAYER TWO :   𝒹😍 𝓃😍𝓉  𝒻💞𝓇𝑔𝑒𝓉 𝑒𝓋𝑒𝓃 𝑀𝒾𝒸𝒽𝒶𝑒𝓁 𝒥☯𝓇𝒹🍪𝓃 𝒹𝒾𝒹 𝓃🌞𝓉 𝑔𝑒𝓉 𝒶𝒸𝒸𝑒𝓅𝓉𝑒𝒹 𝒾𝓃 𝒽𝒾𝓈 𝒻𝒾𝓇𝓈𝓉 𝒶𝓉𝓉𝑒𝓂𝓅𝓉 𝒶𝓉 𝒽𝒾𝑔𝒽-𝒮𝒸𝒽💙💙𝓁 𝐵𝒶𝓈𝓀𝑒𝓉 𝐵𝒶𝓁𝓁.  𝓉𝒽𝑒 𝓈𝒶𝓂𝑒  you will win  🏵𝓃𝑒 𝒹𝒶𝓎   🎀  🍦 `)
         reload()
     }
     if (playerTwoS == 3) {
-        alert("player two win  ")
+        alert(`player two win,  MESSAGE FOR PLAYER One :   𝒹😍 𝓃😍𝓉  𝒻💞𝓇𝑔𝑒𝓉 𝑒𝓋𝑒𝓃 𝑀𝒾𝒸𝒽𝒶𝑒𝓁 𝒥☯𝓇𝒹🍪𝓃 𝒹𝒾𝒹 𝓃🌞𝓉 𝑔𝑒𝓉 𝒶𝒸𝒸𝑒𝓅𝓉𝑒𝒹 𝒾𝓃 𝒽𝒾𝓈 𝒻𝒾𝓇𝓈𝓉 𝒶𝓉𝓉𝑒𝓂𝓅𝓉 𝒶𝓉 𝒽𝒾𝑔𝒽-𝒮𝒸𝒽💙💙𝓁 𝐵𝒶𝓈𝓀𝑒𝓉 𝐵𝒶𝓁𝓁.  𝓉𝒽𝑒 𝓈𝒶𝓂𝑒  you will win  🏵𝓃𝑒 𝒹𝒶𝓎   🎀  🍦 `)
         reload()
-
     }
 }
 
@@ -67,6 +72,8 @@ function decreaseLife(key) {
     }
 }
 function endGame() {
+    currentRound = currentRound + 1
+    round.innerText = currentRound
     alert("Game ended !! we had reset the life of players ");
 
     playerOneLife = 100;
@@ -101,5 +108,6 @@ const setPlayerOneLife = () => {
     }
 }
 
+//  
 playerOne.addEventListener("click", setPlayerTwoLife)
 playerTwo.addEventListener("click", setPlayerOneLife)
