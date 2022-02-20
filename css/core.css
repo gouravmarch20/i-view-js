@@ -1,0 +1,19 @@
+* {
+  margin: 0rem;
+  box-sizing: border-box;
+  color: white;
+}
+/* ul,
+li ,div {
+  margin: 0rem;
+} */
+li {
+  list-style: none;
+}
+.heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: greenyellow;
+  margin-bottom: 0rem;
+  text-align: center;
+}
