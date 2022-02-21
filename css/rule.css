@@ -1,0 +1,17 @@
+body {
+  background-color: #cad5e2;
+}
+
+.content {
+  text-align: center;
+  color: #2827cc;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subheading {
+  text-align: center;
+  color: #12b0e8;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

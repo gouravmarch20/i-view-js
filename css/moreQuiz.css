@@ -35,13 +35,7 @@ main {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.subheading {
-  text-align: center;
-  color: #12b0e8;
-  font-weight: 700;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+
 .content {
   text-align: center;
   color: #2827cc;
