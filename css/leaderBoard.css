@@ -1,0 +1,38 @@
+body {
+  background-color: #cad5e2;
+}
+
+.leaderboard-user {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
+}
+.subheading {
+  text-align: center;
+  color: #12b0e8;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.content {
+  text-align: center;
+  color: #2827cc;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.score {
+  text-align: center;
+  color: blueviolet;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.leaderboard-user {
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
