@@ -3,12 +3,11 @@ a {
   color: #e21717;
 }
 nav a:hover {
-  background-color: #4dd637;
-  padding: 1rem;
-  border-radius: 1rem;
+
+  
   color: red;
-  font-weight: 900;
-  transition: all 1s;
+  font-weight: 800;
+  transition: all 1s ease;
 }
 .nav__left > div {
   margin: 0rem 1rem;
@@ -48,7 +47,6 @@ nav {
 }
 .nav__btn:hover {
   background-color: black;
-  padding: 0.9rem 0.9rem;
   transition: all 1s;
 }
 .nav__right {
